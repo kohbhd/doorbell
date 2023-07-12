@@ -1,6 +1,3 @@
-Upon Download
-1. Rename the folder containing mictest.ino as "mictest".
-
 Arduino Setting
  
 1. Go to Arduino IDE's File/Preferences menu. Enter the following Additional boards manager URLs: 
@@ -13,13 +10,13 @@ https://dl.espressif.com/dl/package_esp32_index.json
 
 4. Go to Tools/Port and select the COM port that ESP32 is connected to
 
-5. Open mictest.ino from File/Open
+5. Open doorbell.ino from File/Open
 
 6. Click on Upload button to compile, upload and run.
 
-7. Once running, select Tools/Serial Plotter. 
+7. Once running, select Tools/Serial Monitor. 
 
-8. There should be a waveform on the Serial Plotter whenever there is a loud noise (e.g. knock on table). 
+8. Detection is done every 5 seconds or so. If the scpore is >200, it will be deemed as face detected.
 
 First commit
 
